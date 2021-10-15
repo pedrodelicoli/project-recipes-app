@@ -1,0 +1,14 @@
+.initRecipes {
+  bottom: 0;
+  position: fixed;
+}
+
+.checkbox-risk {
+  text-decoration: line-through;
+}
+
+.foods, .drinks {
+  border-radius: 15px;
+  height: 100px;
+  width: 120px;
+}

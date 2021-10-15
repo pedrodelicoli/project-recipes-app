@@ -1,0 +1,151 @@
+.login-body {
+  background-color: #cc4b00;
+  font-family: sans-serif;
+  font-size: 14px;
+  height: 100vh;
+  padding-top: 12vh;
+  width: 100vw;
+}
+
+.chef {
+  background-image: url('../images/chef.png');
+  background-size: 100% auto;
+  height: 175px;
+  margin: auto;
+  position: relative;
+  width: 210px;
+}
+
+.smile.email {
+  animation: fadeIn 0.1s ease-in-out;
+  background-image: url('../images/happyChef.png');
+  background-size: 100% auto;
+  height: 175px;
+  left: 50vw;
+  margin: auto;
+  margin-left: -105px;
+  position: absolute;
+  width: 210px;
+  z-index: 1;
+}
+
+@keyframes fadeIn {
+
+  0% { opacity: 0; }
+
+  100% { opacity: 1; }
+}
+
+.chef .hand {
+  background-color: #fcb773;
+  border-radius: 40px;
+  bottom: -15px;
+  height: 34px;
+  left: 14px;
+  position: absolute;
+  transform: scaleY(0.6);
+  transition: 0.3s ease-out;
+  width: 34px;
+}
+
+.chef .hand.password {
+  opacity: 0;
+  transform: translateX(42px) translateY(-15px) scale(0.7);
+}
+
+.chef .hand.hand-r {
+  left: 170px;
+}
+
+.chef .hand.hand-r.password {
+  opacity: 0;
+  transform: translateX(-42px) translateY(-15px) scale(0.7);
+}
+
+.chef .arms {
+  height: 81px;
+  overflow: hidden;
+  position: absolute;
+  top: 95px;
+  width: 100%;
+  z-index: 2;
+}
+
+.chef .arms .arm {
+  background-image: url('../images/chefHand.png');
+  background-size: 120% auto;
+  height: 85px;
+  left: 10px;
+  position: absolute;
+  top: 80px;
+  transition: 0.3s ease-out;
+  width: 40px;
+}
+
+.chef .arms .arm.password {
+  transform: translateX(40px) translateY(-80px);
+}
+
+.chef .arms .arm.arm-r {
+  left: 158px;
+  transform: scaleX(-1);
+}
+
+.chef .arms .arm.arm-r.password {
+  transform: translateX(-40px) translateY(-80px) scaleX(-1);
+}
+
+.form {
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  padding: 30px;
+  width: 300px;
+}
+
+.form .control {
+  margin-bottom: 10px;
+}
+
+.form .control label {
+  color: #4d2a17;
+  font-size: 16px;
+  left: 9px;
+  top: 11px;
+}
+
+.form .control input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 9px 6px 9px 30px;
+}
+
+.kitutz {
+  width: 85%;
+}
+
+.control-submit {
+  display: flex;
+  justify-content: center;
+}
+
+.login-btn {
+  background-color: #ff5c00;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 20px;
+}
+
+.login-btn:disabled {
+  color: #ff8e4d;
+}
+
+.login-btn:hover {
+  border: 2px solid #cc4b00;
+}

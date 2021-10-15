@@ -1,0 +1,50 @@
+.menu-sup {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+.header {
+  align-items: center;
+  background-image: linear-gradient(#dd5100, #f15900, #f15900, #cc4b00);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+}
+
+.header img {
+  width: 45px;
+}
+
+.header button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.search-bar {
+  background-image: linear-gradient(to bottom, rgb(199, 199, 199), rgb(207, 207, 207));
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  padding: 10px;
+}
+
+.search-text {
+  align-self: center;
+  border-radius: 5px;
+}
+
+.radio-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-bar button {
+  background-color: rgb(255, 199, 134);
+  border: 1px solid #9b3900;
+  border-radius: 5px;
+  color: rgb(68, 68, 68);
+}

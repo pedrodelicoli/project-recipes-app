@@ -1,0 +1,61 @@
+.nav-bar {
+  background-image: linear-gradient(to bottom, #2b2a30, #131416);
+  border: none;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 1vh;
+  position: fixed;
+  width: 100vw;
+}
+
+.nav-item {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50px;
+  color: white;
+  display: flex;
+  font-size: 100%;
+  margin: auto;
+  padding: 2vh;
+  text-decoration: none;
+  width: 40vw;
+}
+
+.drink, .food, .explore {
+  padding: 1vh;
+}
+
+.nav-item span {
+  overflow: hidden;
+  width: 0;
+}
+
+.nav-item img {
+  margin: auto;
+  width: 40px;
+}
+
+.nav-item:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.nav-item:focus img {
+  margin-left: 5px;
+  transition: 0.5s;
+  width: 30px;
+}
+
+.nav-item:focus span {
+  margin-left: 8px;
+  transition: 0.4s;
+  width: 100%;
+}
+
+*:focus {
+  border: none;
+  outline: none;
+}
